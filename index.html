@@ -323,11 +323,19 @@
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>[ {
+  "birthday" : "01/06/1994",
+  "commonName" : "Berman",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Sapir Berman",
   "TeamName" : "Real Madrid",
   "profileImage" : { },
   "coachId" : 10
 }, {
+  "birthday" : "01/06/1994",
+  "commonName" : "Berman",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Sapir Berman",
   "TeamName" : "Real Madrid",
   "profileImage" : { },
@@ -379,17 +387,29 @@
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>[ {
+  "birthday" : "02/07/1987",
+  "commonName" : "Erani",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Eran Zehavi",
+  "weight" : 78,
   "TeamName" : "Real Madrid",
   "profileImage" : { },
   "positionNumber" : 1,
-  "playerId" : 3
+  "playerId" : 3,
+  "height" : 182
 }, {
+  "birthday" : "02/07/1987",
+  "commonName" : "Erani",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Eran Zehavi",
+  "weight" : 78,
   "TeamName" : "Real Madrid",
   "profileImage" : { },
   "positionNumber" : 1,
-  "playerId" : 3
+  "playerId" : 3,
+  "height" : 182
 } ]</code></pre>
 
     <h3 class="field-label">Produces</h3>
@@ -741,6 +761,10 @@
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>{
+  "birthday" : "01/06/1994",
+  "commonName" : "Berman",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Sapir Berman",
   "TeamName" : "Real Madrid",
   "profileImage" : { },
@@ -792,11 +816,17 @@
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>{
+  "birthday" : "02/07/1987",
+  "commonName" : "Erani",
+  "nation" : "Jewish",
+  "countryBirth" : "Israel",
   "fullName" : "Eran Zehavi",
+  "weight" : 78,
   "TeamName" : "Real Madrid",
   "profileImage" : { },
   "positionNumber" : 1,
-  "playerId" : 3
+  "playerId" : 3,
+  "height" : 182
 }</code></pre>
 
     <h3 class="field-label">Produces</h3>
@@ -847,25 +877,45 @@
   "teamName" : "Real Madrid",
   "teamId" : 23,
   "TeamPlayers" : [ {
+    "birthday" : "02/07/1987",
+    "commonName" : "Erani",
+    "nation" : "Jewish",
+    "countryBirth" : "Israel",
     "fullName" : "Eran Zehavi",
+    "weight" : 78,
     "TeamName" : "Real Madrid",
     "profileImage" : { },
     "positionNumber" : 1,
-    "playerId" : 3
+    "playerId" : 3,
+    "height" : 182
   }, {
+    "birthday" : "02/07/1987",
+    "commonName" : "Erani",
+    "nation" : "Jewish",
+    "countryBirth" : "Israel",
     "fullName" : "Eran Zehavi",
+    "weight" : 78,
     "TeamName" : "Real Madrid",
     "profileImage" : { },
     "positionNumber" : 1,
-    "playerId" : 3
+    "playerId" : 3,
+    "height" : 182
   } ],
   "upcomingGames" : [ null, null ],
   "Coach" : [ {
+    "birthday" : "01/06/1994",
+    "commonName" : "Berman",
+    "nation" : "Jewish",
+    "countryBirth" : "Israel",
     "fullName" : "Sapir Berman",
     "TeamName" : "Real Madrid",
     "profileImage" : { },
     "coachId" : 10
   }, {
+    "birthday" : "01/06/1994",
+    "commonName" : "Berman",
+    "nation" : "Jewish",
+    "countryBirth" : "Israel",
     "fullName" : "Sapir Berman",
     "TeamName" : "Real Madrid",
     "profileImage" : { },
@@ -971,6 +1021,14 @@
 <div class="param">TeamName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
           <div class="param-desc"><span class="param-type">example: Real Madrid</span></div>
 <div class="param">profileImage (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span>  </div>
+<div class="param">commonName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Berman</span></div>
+<div class="param">nation (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Jewish</span></div>
+<div class="param">birthday (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 01/06/1994</span></div>
+<div class="param">countryBirth (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Israel</span></div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
@@ -1034,6 +1092,18 @@
 <div class="param">profileImage (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">Object</a></span>  </div>
 <div class="param">positionNumber (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
           <div class="param-desc"><span class="param-type">example: 1</span></div>
+<div class="param">commonName (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Erani</span></div>
+<div class="param">nation (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Jewish</span></div>
+<div class="param">birthday (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 02/07/1987</span></div>
+<div class="param">countryBirth (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Israel</span></div>
+<div class="param">height (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 182</span></div>
+<div class="param">weight (optional)</div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 78</span></div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
